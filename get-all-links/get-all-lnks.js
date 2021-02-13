@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name         Get All links from a website
+// @name         Get All Links
 // @name:zh-TW   获取网页中的全部链接
 // @name:zh-HK   獲取網頁中的全部鏈接 
 // @name:zh-CN   獲取網頁中的全部鏈接 
 // @namespace    https://tdl3.com/
 // @version      0.1.0
-// @description  Get all links from a website, change @match to the website which you want to get link from.
+// @description  Get all links from a website, change @match to the website to which you want to get links. 
 // @description:zh-TW  获取网页中的全部链接，将 @match 改到你想获得链接的网站。
 // @description:zh-HK  獲取網頁中的全部鏈接，將 @match 改到你想獲得鏈接的網站 。
 // @description:zh-CN  獲取網頁中的全部鏈接，將 @match 改到你想獲得鏈接的網站 。
