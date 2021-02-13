@@ -3,5 +3,5 @@ This repo contains the Userscript that I wrote that I think is useful. I hope on
 
 ## Greasy Fork links
 All scripts are uploaded to Greasy Fork.
-### [Get All Links]()
+### [Get All Links](https://greasyfork.org/en/scripts/421673-get-all-links-from-a-website)
 ### [Zhihu Title Cleaner](https://greasyfork.org/en/scripts/408445-zhihu-title-cleaner)
