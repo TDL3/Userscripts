@@ -37,7 +37,7 @@ function make_list(links) {
   let urls = document.querySelectorAll("a");
   let links_and_names = {};
   const name_regex = new RegExp(/png|jpg/g);
-  let res = false;
+  let res = true;
   for (let i = 0; i < urls.length; i++) {
     let nametext = urls[i].textContent;
     // remove whilte spaces and tabs
