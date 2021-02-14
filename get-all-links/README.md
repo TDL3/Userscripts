@@ -6,10 +6,14 @@ Get all links from a website, change @match to the website to which you want to 
 ![table](table.png)
 
 ## Example
-### Get all links from a youutbe channel
-1. change `@match` to `https://youtube.com/*`
-2. change regex to `watch`
+### Get all video watch links of a youutbe channel
+1. change `@match` to `https://*.youtube.com/*`
+2. change filter_results to true;
 ```javascript
-const name_regex = new RegExp(/watch/g);
+const filter_results = true;
+```
+3. change regex to `watch`
+```javascript
+const filter_regex = new RegExp(/watch/g);
 ```
 ![youtube](youtube.png)
