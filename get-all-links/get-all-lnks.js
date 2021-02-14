@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         Get All Links
-// @name:zh-TW   获取网页中的全部链接
+// @name:zh-CN   获取网页中的全部链接
 // @name:zh-HK   獲取網頁中的全部鏈接
-// @name:zh-CN   獲取網頁中的全部鏈接
+// @name:zh-TW   獲取網頁中的全部鏈接
 // @namespace    https://tdl3.com/
 // @version      0.2.1
 // @description  Get all links from a website, change @match to the website to which you want to get links.
-// @description:zh-TW  获取网页中的全部链接，将 @match 改到你想获得链接的网站。
+// @description:zh-CN  获取网页中的全部链接，将 @match 改到你想获得链接的网站。
 // @description:zh-HK  獲取網頁中的全部鏈接，將 @match 改到你想獲得鏈接的網站 。
-// @description:zh-CN  獲取網頁中的全部鏈接，將 @match 改到你想獲得鏈接的網站 。
+// @description:zh-TW  獲取網頁中的全部鏈接，將 @match 改到你想獲得鏈接的網站 。
 // @author       TDL3
 // @match        https://heyeased.weebly.com/*
 // @grant        none
