@@ -4,7 +4,7 @@
 // @name:zh-HK   獲取網頁中的全部鏈接
 // @name:zh-TW   獲取網頁中的全部鏈接
 // @namespace    https://tdl3.com/
-// @version      0.2.1
+// @version      0.3.1
 // @description  Get all links from a website. right-click -> tampermonkey -> "Get All Links".
 // @description:zh-CN  获取网页中的全部链接。鼠标右键 -> tampermonkey -> "Get All Links"。
 // @description:zh-HK  獲取網頁中的全部鏈接。滑鼠右鍵 -> tampermonkey -> "Get All Links" 。
