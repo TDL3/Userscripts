@@ -4,15 +4,14 @@
 // @name:zh-HK   獲取網頁中的全部鏈接
 // @name:zh-TW   獲取網頁中的全部鏈接
 // @namespace    https://tdl3.com/
-// @version      0.2.1
-// @description  Get all links from a website, change @match to the website to which you want to get links.
-// @description:zh-CN  获取网页中的全部链接，将 @match 改到你想获得链接的网站。
-// @description:zh-HK  獲取網頁中的全部鏈接，將 @match 改到你想獲得鏈接的網站 。
-// @description:zh-TW  獲取網頁中的全部鏈接，將 @match 改到你想獲得鏈接的網站 。
+// @version      0.3.1
+// @description  Get all links from a website. right-click -> tampermonkey -> "Get All Links".
+// @description:zh-CN  获取网页中的全部链接。鼠标右键 -> tampermonkey -> "Get All Links"。
+// @description:zh-HK  獲取網頁中的全部鏈接。滑鼠右鍵 -> tampermonkey -> "Get All Links" 。
+// @description:zh-TW  獲取網頁中的全部鏈接。滑鼠右鍵 -> tampermonkey -> "Get All Links"。
 // @author       TDL3
-// @match        https://heyeased.weebly.com/*
 // @grant        none
-// @run-at       document-idle
+// @run-at       context-menu
 // ==/UserScript==
 
 const filter_results = false;
@@ -36,23 +35,6 @@ function make_list(results) {
   window.open("").document.write(list);
 }
 
-function add_button(text, onclick, cssObj) {
-  cssObj = cssObj || {
-    position: "absolute",
-    bottom: "7%",
-    right: "4%",
-    "z-index": 3,
-  };
-  let button = document.createElement("button");
-  let btnStyle = button.style;
-  document.body.appendChild(button);
-  button.innerHTML = text;
-  button.onclick = onclick;
-  Object.keys(cssObj).forEach((key) => {
-    btnStyle[key] = cssObj[key];
-  });
-  return button;
-}
 function filter_link(link) {
   if (!!link.match(filter_regex)) {
     return true;
@@ -84,19 +66,5 @@ function get_links() {
 
 (function () {
   "use strict";
-
-  window.addEventListener("load", () => {
-    add_button("Get Links", get_links, {
-      position: "absolute",
-      bottom: "7%",
-      left: "4%",
-      "z-index": 3,
-    });
-    add_button("Get Links", get_links, {
-      position: "absolute",
-      bottom: "7%",
-      right: "4%",
-      "z-index": 3,
-    });
-  });
+  get_links();
 })();
