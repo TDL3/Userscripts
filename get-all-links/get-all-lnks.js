@@ -11,6 +11,7 @@
 // @description:zh-TW  獲取網頁中的全部鏈接。滑鼠右鍵 -> tampermonkey -> "Get All Links"。
 // @author       TDL3
 // @grant        none
+// @match        https://tdl3.com/*
 // @run-at       context-menu
 // ==/UserScript==
 
